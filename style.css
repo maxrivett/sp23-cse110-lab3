@@ -9,14 +9,15 @@ p {
 	color: #666;
 	margin: 0;
 	padding: 10px;
-    width: 1ch;
+    width: 100ch;
     margin-top: 10px;
     padding-right: 20px;
 }
 
+/* Element Selector */
 h1 {
     color: rgb(20,30,40);
-    width: 200px;
+    width: 600px;
     margin: 20px 10px;
     padding: 10px 20px;
     border-style:dotted;
@@ -28,21 +29,22 @@ h1 {
 
 h2 {
     color: hsl(30, 20, 50);
-    width: 1cm;
+    width: 10cm;
     margin: auto;
-    max-width: 400px;
+    max-width: 800px;
     min-width: none;
     position:relative;
 }
 
 h3 {
     color: dodgerblue;
-    width: 5mm;
-    height: 20mm;
+    width: 90mm;
+    height: 10mm;
     text-align: center;
     position:sticky
 }
 
+/* Class Selector */
 .ele1 {
     width: 5vw;
     display:block;
@@ -72,6 +74,7 @@ h3 {
     display: none;
 }
 
+/* Pseudo-class Selector */
 button:hover {
     color: rebeccapurple;
 }
@@ -124,3 +127,58 @@ button:active {
       padding: 10px;
     }
   }
+  
+
+
+  /* CSS Selectors */
+  
+/* ID Selector */
+#test-id-selector {
+    background-color: blue;
+}
+
+/* Universal Selector */
+* {
+    margin: 1;
+    padding: 1;
+}
+
+/* Attribute Selector (e.g. [attribute=foo]) */
+a[target="_blank"] {
+    text-decoration: underline;
+}
+
+/* Selector List */
+h3, h4 {
+    color: green;
+}
+
+/* Combinators */
+/* Descendant Combinator */
+ul li {
+    list-style-type: circle;
+}
+
+/* Child Combinator */
+div > p {
+    font-style: oblique;
+}
+
+/* General sibling combinator */
+h3 ~ p {
+    border: 1px dotted aquamarine;
+}
+
+/* Adjacent sibling combinator */
+h4 + p {
+    accent-color: sandybrown;
+}
+
+/* Combining Two Selectors */
+span.highlight {
+    background-color: blueviolet;
+}
+
+
+
+
