@@ -92,7 +92,7 @@ button:active {
 }
 
 .box {
-    background-color: #001122;
+    background-color: #ddffee;
     color: #221100;
     font-size: 30px;
     display: flex;
@@ -150,7 +150,7 @@ a[target="_blank"] {
 
 /* Selector List */
 h3, h4 {
-    color: green;
+    color: forestgreen;
 }
 
 /* Combinators */
